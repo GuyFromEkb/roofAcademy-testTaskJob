@@ -29,13 +29,24 @@
     }
 }
 
+.show {
+    visibility: visible;
+    opacity: 1;
+}
+
+.hide {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.stop-scroll {
+    overflow: hidden;
+}
+
 button {
     outline: none!important;
     transition-duration: .5s;
     border: none;
-    // &:active {
-    //     transform: scale(1.02)
-    // }
 }
 
 body {
