@@ -1,0 +1,190 @@
+.header {
+    padding-top: vw(43);
+    &__top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__icon {
+        margin-right: vw(100);
+        width: vw(23);
+        height: vw(22);
+    }
+    &__list {
+        padding-right: vw(18);
+        width: 100%;
+        display: flex;
+        list-style-type: none;
+        justify-content: space-between;
+    }
+    &__link {
+        display: flex;
+        align-items: center;
+        a {
+            font-weight: 500;
+            font-size: vw(14);
+            line-height: 140%;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            color: $black;
+        }
+    }
+    &__hr {
+        margin-top: vw(34);
+        height: vw(1);
+        background: $black;
+        opacity: 0.07;
+    }
+    &__bottom {
+        display: flex;
+        justify-content: space-between;
+        a {
+            text-decoration: none;
+        }
+    }
+    &__slogan {
+        margin-top: vw(28);
+        width: vw(210);
+        font-weight: 400;
+        font-size: vw(12);
+        line-height: vw(18);
+        text-align: center;
+        color: $black;
+    }
+    &__price {
+        align-items: center;
+        flex-shrink: 1;
+        display: flex;
+        gap: vw(17.15);
+    }
+    &__logo {
+        object-fit: cover;
+        height: vw(148);
+        width: auto;
+    }
+    &__contact {
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: vw(6);
+    }
+    &__work-time {
+        font-weight: 400;
+        font-size: vw(12);
+        line-height: vw(15);
+        text-align: center;
+        letter-spacing: 0.02em;
+        color: #1C1C1C;
+    }
+    &__phone {
+        font-weight: 600;
+        font-size: vw(22);
+        line-height: vw(27);
+        letter-spacing: 0.05em;
+        color: $black;
+        &:hover {
+            color: $black;
+        }
+    }
+}
+
+.link {
+    height: vw(19);
+    position: relative;
+    font-weight: 600;
+    font-size: vw(12);
+    line-height: vw(15);
+    letter-spacing: 0.04em;
+    color: $black;
+    // 
+    background-image: linear-gradient(to right, $green 35%, rgba(255, 255, 255, 0) 0);
+    background-size: vw(6)vw(2);
+    background-repeat: repeat-x;
+    background-position: vw(2)vw(16);
+    &:hover {
+        color: $black;
+    }
+    &_call-me {
+        color: $green;
+        width: vw(106);
+        background-size: vw(7)vw(2);
+        &:hover {
+            color: $green;
+        }
+    }
+}
+
+.button {
+    &__link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        Width: vw(43.85);
+        Height: vw(43.85);
+        border-radius: 50%;
+        &_pdf {
+            background-color: #fff;
+            font-weight: 600;
+            font-size: vw(11);
+            line-height: vw(13);
+            letter-spacing: 0.04em;
+            color: $green;
+            &:hover {
+                color: $green;
+            }
+        }
+        &_viber {
+            background: #976FCC;
+            svg {
+                width: auto;
+                height: vw(21);
+            }
+        }
+        &_whatsapp {
+            background: $green;
+            svg {
+                width: auto;
+                height: vw(21);
+            }
+        }
+        &_telegram {
+            background: #05A0EB;
+            svg {
+                width: auto;
+                height: vw(15);
+            }
+        }
+    }
+}
+
+.social {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: vw(16.5);
+    &__link {
+        display: flex;
+        gap: vw(14.5);
+    }
+    &__title {
+        position: relative;
+        font-weight: 400;
+        font-size: vw(12);
+        line-height: vw(15);
+        letter-spacing: 0.02em;
+        color: black;
+        &::before {
+            content: "";
+            position: absolute;
+            width: vw(4);
+            height: vw(4);
+            border-radius: 50%;
+            background: $green;
+            top: 50%;
+            transform: translateY(-50%);
+            left: vw(-8);
+        }
+    }
+}

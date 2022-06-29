@@ -1,0 +1,52 @@
+@import 'libs/bootstrap-reboot.min';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+@import 'base/variables';
+@import 'base/mixins';
+@function vw($value) {
+    $base: 1920;
+    @return calc($value / $base * 100vw)
+}
+
+;
+* {
+    font-family: 'Montserrat', sans-serif;
+    // margin: 0;
+    // padding: 0;
+}
+
+.bold-600 {
+    font-weight: 600;
+}
+
+.bold-700 {
+    font-weight: 700;
+}
+
+.new-line {
+    display: block;
+    &_slogan {
+        margin-top: vw(13);
+    }
+}
+
+button {
+    outline: none!important;
+    transition-duration: .2s;
+    border: none;
+    // &:active {
+    //     transform: scale(1.02)
+    // }
+}
+
+body {
+    background: url('../img/body/bg.jpg') center/cover no-repeat;
+    height: vw(1080);
+}
+
+.container {
+    max-width: vw(1565);
+    margin: 0 auto;
+}
+
+@import 'blocks/header';
+@import 'blocks/main';
