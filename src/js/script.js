@@ -112,4 +112,27 @@ document.addEventListener("DOMContentLoaded", function() {
 
     })();
 
+
+    //Hamburger-menu
+    const hamburger = document.querySelector('.header__burger');
+    const menuItem = document.querySelectorAll('[data-menu]');
+
+    hamburger.addEventListener('click', () => {
+        hamburger.classList.toggle('active');
+
+        if (hamburger.classList.contains('active')) {
+            menuItem.forEach(item => {
+                item.removeAttribute('data-menu-hide');
+            });
+        } else {
+            menuItem.forEach(item => {
+                item.setAttribute('data-menu-hide', '');
+            });
+        }
+
+
+
+
+    });
+
 });
