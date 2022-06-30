@@ -1,7 +1,7 @@
 .modal {
     &__overlay {
         transition: all 1s;
-        z-index: 3;
+        z-index: 6;
         position: fixed;
         top: 0;
         left: 0;
@@ -17,7 +17,7 @@
         transition: all .6s;
         padding: vw(69) vw(85) 0 vw(88);
         border-radius: vw(35);
-        z-index: 4;
+        z-index: 7;
         position: absolute;
         width: vw(550);
         height: vw(650);
@@ -114,7 +114,7 @@
         color: #A7A7A7;
         padding: vw(24) 0 vw(20) vw(46);
         margin-top: vw(12);
-        box-shadow: 0px 0px vw(50) rgba(0, 0, 0, 0.05);
+        box-shadow: 0px 0px vw(50) rgba(0, 0, 0, 0.5);
     }
     &__btn {
         position: relative;

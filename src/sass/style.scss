@@ -51,7 +51,7 @@ button {
 
 body {
     background: url('../img/body/bg.jpg') center/cover no-repeat;
-    height: vw(1080);
+    // overflow: hidden;
 }
 
 .container {
@@ -63,3 +63,4 @@ body {
 @import 'blocks/main';
 @import 'blocks/modal';
 @import 'blocks/media';
+@import 'blocks/animate';

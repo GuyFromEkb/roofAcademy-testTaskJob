@@ -102,11 +102,12 @@ document.addEventListener("DOMContentLoaded", function() {
             showModal(modalTnh);
 
             //autoclose
-            setTimeout(() => {
-                if (!modalTnh.classList.contains('hide')) {
-                    hideModal();
-                }
-            }, 5000);
+
+            // setTimeout(() => {
+            //     if (!modalTnh.classList.contains('hide')) {
+            //         hideModal();
+            //     }
+            // }, 5000);
 
         });
 
@@ -114,25 +115,44 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
     //Hamburger-menu
-    const hamburger = document.querySelector('.header__burger');
-    const menuItem = document.querySelectorAll('[data-menu]');
+    (function() {
+        const hamburger = document.querySelector('.header__burger');
+        const menuItem = document.querySelectorAll('[data-menu]');
 
-    hamburger.addEventListener('click', () => {
-        hamburger.classList.toggle('active');
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
 
-        if (hamburger.classList.contains('active')) {
-            menuItem.forEach(item => {
-                item.removeAttribute('data-menu-hide');
-            });
-        } else {
-            menuItem.forEach(item => {
-                item.setAttribute('data-menu-hide', '');
-            });
-        }
+            if (hamburger.classList.contains('active')) {
+                menuItem.forEach(item => {
+                    item.removeAttribute('data-menu-hide');
+                });
+            } else {
+                menuItem.forEach(item => {
+                    item.setAttribute('data-menu-hide', '');
+                });
+            }
+        });
+    })();
+
+    //OpenList-mobile
+    (function() {
+        const btn = document.querySelector('.main__services-btn');
+        const list = document.querySelector('.main__services');
+
+        btn.addEventListener('click', () => {
+
+            list.classList.toggle('active');
+            btn.classList.toggle('active');
 
 
 
 
-    });
+            console.log('cl');
+        });
+
+    })();
+
+
+
 
 });

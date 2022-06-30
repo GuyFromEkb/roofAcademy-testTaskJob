@@ -62,10 +62,12 @@
         gap: vw(17.15);
     }
     &__logo {
-        margin-left: vw(32);
-        width: vw(374);
-        height: auto;
-        object-fit: cover;
+        img {
+            margin-left: vw(32);
+            width: vw(374);
+            height: auto;
+            object-fit: cover;
+        }
     }
     &__social {
         margin-top: vw(38);
