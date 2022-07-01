@@ -13,10 +13,10 @@
         width: vw(225);
         height: vw(569);
         // height: vw(606);
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        gap: vw(48);
+        // display: flex;
+        // align-items: center;
+        // flex-direction: column;
+        // gap: vw(48);
         padding: vw(6) vw(30) 0 vw(30);
         &::after {
             content: "";
@@ -40,6 +40,12 @@
             // background: linear-gradient(to top right, #fff 50%, rgba(0, 0, 0, 0) 54%);
             // border-radius: vw(20) 0 0 0;
         }
+    }
+    &__services-wrap {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: vw(48);
     }
     &__service {
         z-index: 2;

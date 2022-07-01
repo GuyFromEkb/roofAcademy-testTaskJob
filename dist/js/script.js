@@ -103,11 +103,11 @@ document.addEventListener("DOMContentLoaded", function() {
 
             //autoclose
 
-            // setTimeout(() => {
-            //     if (!modalTnh.classList.contains('hide')) {
-            //         hideModal();
-            //     }
-            // }, 5000);
+            setTimeout(() => {
+                if (!modalTnh.classList.contains('hide')) {
+                    hideModal();
+                }
+            }, 5000);
 
         });
 
